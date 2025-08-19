@@ -18,7 +18,7 @@ def basic_probability():
     p = st.number_input("성공 확률 p (0 ~ 1)", min_value=0.0, max_value=1.0, value=0.5)
     k = st.number_input("성공 횟수 k", min_value=1, value=1)
     expected_trials = k / p if p > 0 else float('inf')
-    st.write(f"✅ 평균적으로 {expected_trials:.1f}번 시도하면 {k}번 성공합니다.")
+    st.write(f"✅ 평균적으로 {expected_trials:.100f}번 시도하면 {k}번 성공합니다.")
 
 # --- 2. 확률 분포 계산기
 def probability_distributions():
